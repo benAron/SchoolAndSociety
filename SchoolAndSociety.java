@@ -17,8 +17,12 @@ public class SchoolAndSociety {
 		replaceCollector = textDocs.getReplace();
 		inputCollector = textDocs.getInput();
 		
+		//Set Translations.java
+		Translations jargon = new Translations();
+		jargon.set(searchCollector, replaceCollector, inputCollector);
 		
-		
+		//Now that Translations is set, construct Rate.java
+		Rate bookCycle = new Rate();
 		
 		
 		
