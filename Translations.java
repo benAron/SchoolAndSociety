@@ -14,8 +14,12 @@ public class Translations {
 	
 	//every word of input will be cycled through translate by rate.java
 	public String translate(int wordNumber, boolean shouldTranslate) { 
+		String currentSearch; //hold cycling search values
+		String currentReplace; //hold cycling replace values
+		String currentInput; //hold cycling input values 
+		
 		if(shouldTranslate) { 
-			
+			currentInput = holdInput.get(wordNumber);
 		
 		
 		}	
