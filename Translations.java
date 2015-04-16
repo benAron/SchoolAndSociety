@@ -18,11 +18,18 @@ public class Translations {
 		String currentReplace; //hold cycling replace values
 		String currentInput; //hold cycling input values 
 		
+		currentInput = holdInput.get(wordNumber);
+		
 		if(shouldTranslate) { 
-			currentInput = holdInput.get(wordNumber);
-		
-		
-		}	
-		
-	} 
+			int searchIndex = holdSearch.indexOf(currentInput); //find index of search value
+			if(searchIndex == -1) { // if there is no translation
+				currentReplace = currentInput;
+			} else { 
+				currentReplace = holdReplace.get(searchIndex);
+			}
+		} else { // when !shouldTranslate
+			currentReplace = currentInput;	
+		}
+		return currentReplace;	
+	}	
 }
