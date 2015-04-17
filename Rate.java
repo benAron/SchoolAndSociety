@@ -14,7 +14,7 @@ public class Rate {
     inputAmount = fullInput.size();
     
     int currentRand;
-    ArrayList<Integer> randomVals = new ArrayList<Integer>;
+    ArrayList<Integer> randomVals = new ArrayList<Integer>();
     
     //Generate random values 
     while(randomVals.size() < altered) { 
