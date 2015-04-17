@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.*;
 
 public class Rate { 
   int scope; //how many words per cycle
