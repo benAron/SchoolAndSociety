@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class Translations { 
 	ArrayList<String> holdSearch = new ArrayList<String>();
