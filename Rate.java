@@ -20,7 +20,7 @@ public class Rate {
     while(randomVals.size() < altered) { 
       currentRand = rand.nextInt(scope + 1); //create random number
       if(randomVals.contains(currentRand) != true) { //only include non-repeating
-        randVals.add(currentRand); 
+        randomVals.add(currentRand); 
       }
     }
     System.out.println("Random numbers generated.");
