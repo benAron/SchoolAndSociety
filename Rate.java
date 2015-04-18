@@ -37,7 +37,7 @@ public class Rate {
         translateOption = false; 
       }
       
-      jargon.translate(i, translateOption);
+     return jargon.translate(i, translateOption);
     }
   }
 }
