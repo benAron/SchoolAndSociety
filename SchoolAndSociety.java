@@ -17,10 +17,6 @@ public class SchoolAndSociety {
 		replaceCollector = textDocs.getReplace();
 		inputCollector = textDocs.getInput();
 		
-		//Set Translations.java
-		Translations jargon = new Translations();
-		jargon.set(searchCollector, replaceCollector, inputCollector);
-		
 		//Now that Translations is set, construct Rate.java
 		Rate bookCycle = new Rate();
 		
@@ -30,7 +26,7 @@ public class SchoolAndSociety {
 		int cycles = wordsAll / 25;
 		
 		for(int i = 0; cycles > i; i++) { 
-			toOutput += bookCycle.cycle(perCycle, 5, searchCollector, inputCollector);
+			toOutput += bookCycle.cycle(perCycle, 5, searchCollector, replaceCollector, inputCollector);
 			toOutput += " ";	
 		}
 		System.out.println(toOutput);
