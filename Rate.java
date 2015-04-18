@@ -5,6 +5,7 @@ public class Rate {
   int altered; //how many words translated per cycle
   int inputAmount; // total amount of words in input
   String wordForTranslate = "";
+  String jargonCollector = "";
   
   Random rand = new Random(); 
   Translations jargon = new Translations();
@@ -37,7 +38,8 @@ public class Rate {
         translateOption = false; 
       }
       
-     return jargon.translate(i, translateOption);
+      jargonCollector += jargon.translate(i, translateOption);
     }
+    return jargonCollector;
   }
 }
