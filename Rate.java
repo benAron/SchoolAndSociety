@@ -7,11 +7,13 @@ public class Rate {
   String wordForTranslate = "";
   
   Random rand = new Random(); 
+  Translations jargon = new Translations();
   
-  public String cycle (int currentScope, int currentAlt, ArrayList<String> fullSearch, ArrayList<String> fullInput) { //use Translations.java to produce translation
+  public String cycle (int currentScope, int currentAlt, ArrayList<String> fullSearch, ArrayList<String> fullReplace, ArrayList<String> fullInput) { //use Translations.java to produce translation
     scope = currentScope;
     altered = currentAlt; 
     inputAmount = fullInput.size();
+    jargon.set(fullSearch, fullReplace, fullInput);
     
     int currentRand;
     ArrayList<Integer> randomVals = new ArrayList<Integer>();
