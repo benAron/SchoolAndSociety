@@ -27,6 +27,7 @@ public class SchoolAndSociety {
 		int cycles = wordsAll / 25;
 		
 		for(int i = 0; cycles > i; i++) { 
+			System.out.println("On cycle "+ i +" out of "+ cycles);
 			toOutput += bookCycle.cycle(perCycle, 5, searchCollector, replaceCollector, inputCollector);
 			toOutput += " ";	
 		}
