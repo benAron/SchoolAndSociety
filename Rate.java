@@ -9,7 +9,10 @@ public class Rate {
   
   Random rand = new Random(); 
   Translations jargon = new Translations();
-  jargon.set(fullSearch, fullReplace, fullInput); //set once with construction of Rate
+  
+  public void set(ArrayList<String> passSearch, ArrayList<String> passReplace, ArrayList<String> passInput) {
+    jargon.set(passSearch, passReplace, passInput); //set once with construction of Rate
+  }
   
   public String cycle (int currentScope, int currentAlt, ArrayList<String> fullSearch, ArrayList<String> fullReplace, ArrayList<String> fullInput) { //use Translations.java to produce translation
     scope = currentScope;
