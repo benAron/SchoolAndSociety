@@ -39,4 +39,5 @@ public class Rate {
       
       jargon.translate(i, translateOption);
     }
+  }
 }
