@@ -19,6 +19,7 @@ public class SchoolAndSociety {
 		
 		//Now that Translations is set, construct Rate.java
 		Rate bookCycle = new Rate();
+		bookCycle.set(searchCollector, replaceCollector, inputCollector);
 		
 		//Loop through all of the cycles -- 25 words each
 		int wordsAll = inputCollector.size();
